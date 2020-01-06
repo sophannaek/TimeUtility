@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<style>
+			#ui{
+				width:300px;
+				height:450px;
+				color:white;
+				position: relative;
+				background-color:black;
+				border-radius:2%;
+				margin-top:10%;
+				
+			}
+			#main{
+				 padding: 5em 0; 
+			}
+			#menu{
+				background-color:#272827;
+				width:100%;
+				height:50px;
+				position: absolute;
+				bottom:0;
+				border-radius:1%;
+			}
+			#top{
+				background-color:#272827;
+				width:300px;
+				height:50px;
+				position: absolute;
+				top:0;
+				border-radius:1%;
+			}
+			p.button{
+				cursor:pointer; font-size: 13px;color:gray;
+				padding: 1em 1em;}
+			#digital-clock{
+				background-color:#272827;
+				width:80%;
+				height:6%;
+				padding: 2em 2em;
+				border-radius:5%;
+				font-size:20px;
+			}
+			.btn{ 
+				border-radius: 100%;
+				color: gray;
+				border: 1px solid gray;
+				width: 4em;
+				height: 4em; 
+				margin: 1em 1em;
+			}
+			#lapTimeDiv{
+				overflow-y: auto;
+				height: 10em;
+			}
+			#p-lap{ 
+				border-bottom: 1px ridge gray;
+				width:65%;	
+			}
+			select{margin:5px 5px; background-color:lightgray;}
+			#timerDiv{
+				background-color:#272827;
+				width:90%;
+				height:6%;
+				padding-top: 0.5em;
+				border-radius:5%;
+				font-size:15px;
+				display:none;
+			}
+			.form-control{
+				font-size:12px;
+				width:20%;
+				display:inline;
+			}
+			.button:hover, p.active{
+				color:#C68112;
+			}
+			#alarm-div{
+				display:none;
+			}
+			.row{
+				top:0;
+				position:absolute;
+			}
+			.left{
+				text-align:left;}
+			.right{text-align:right;}
+		</style>
+	</head>
+	<body>
+
+		<center>
+		<div id='ui'>
+			<div id='top' style='display:none'>
+			</div>
+				<div id='main'>
+					<!-- clock display -->
+					<div id='stopwatchDiv'></div>
+					<div id='timerDiv'></div>
+					<div id='alarm-div' class='container'>
+						<div class='row'>
+							<div class='col-8 left' >
+								<p>Alarm</p>
+							</div>
+							<div class='col-4 right' >
+								<p id='alarm_add' style='font-size:20px;' >+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			<div id='menu'>
+				<div class='row'>
+					<div class='col-sm-3'>
+						<p class='button' id='clock-btn'>clock</p>
+					</div>
+					<div class='col-sm-3'>
+						<p class='button' id='alarm-btn'>alarm</p>
+						
+					</div>
+					<div class='col-sm-2'>
+						<p class='button' id='timer-btn'>timer</p>
+						
+					</div>
+					<div class='col-sm-4'>
+						<p class='button' id='stopwatch-btn'>stopwatch</p>		
+					</div>
+				</div>
+		</div>
+		</div>
+	</center>
+
+
+	</body>
+	<script src='utility.js'></script>
+</html>
